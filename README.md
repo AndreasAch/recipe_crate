@@ -1,4 +1,18 @@
+<div align="center">
+  <img src="client/src/assets/banner.png" alt="Recipe Crate Banner" width="100%">
+</div>
+
 # 🥗 Recipe Crate
+![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![React Router](https://img.shields.io/badge/React_Router-7.12-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
+![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.28-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+
+![Express.js](https://img.shields.io/badge/Express.js-5.2-404D59?style=for-the-badge&logo=express&logoColor=white)
+![Node.js](https://img.shields.io/badge/Node.js-24+-339933?style=for-the-badge&logo=node.js&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/pg_(Driver)-8.17-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+
+![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 A modern, full-stack application for managing recipes, planning meals, and handling ingredient lists. Built with the **PERN stack** (PostgreSQL, Express, React, Node), this project features a robust REST API and a responsive frontend powered by **Vite**.
 
@@ -80,3 +94,30 @@ npm install
 npm run local
 ```
 * Visit ``http://localhost:5173``
+
+## 📂 Project Structure
+```text
+recipe_crate
+├── api
+│   └── index.ts              # Entry point for Vercel Serverless functions (Production)
+├── client                    # Frontend directory (React + Vite)
+│   ├── index.html            # Main HTML document entry point
+│   ├── package-lock.json     # Exact version lock for client dependencies
+│   ├── package.json          # Client-side dependencies and scripts (npm run local)
+│   ├── public                # Static assets folder (favicons, public images)
+│   ├── src                   # Main React source code (Components, Hooks, Pages)
+│   ├── tsconfig.app.json     # TypeScript configuration for the React application code
+│   ├── tsconfig.json         # Main TypeScript configuration reference
+│   ├── tsconfig.node.json    # TypeScript configuration for Vite/Node build tools
+│   └── vite.config.ts        # Vite bundler configuration and API proxy settings
+├── package-lock.json         # Exact version lock for root dependencies
+├── package.json              # Root directory scripts (orchestrates both client/server)
+├── schema.sql                # SQL script to create tables and database schema
+├── server                    # Backend directory (Express + Node.js)
+│   ├── package-lock.json     # Exact version lock for server dependencies
+│   ├── package.json          # Server-side dependencies and scripts
+│   ├── src                   # Backend source code (Controllers, Routes, DB connection)
+│   └── tsconfig.json         # TypeScript configuration for the backend environment
+└── vercel.json               # Deployment configuration and route rewrites for Vercel
+```
+
