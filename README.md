@@ -3,16 +3,14 @@
 </div>
 
 # 🥗 Recipe Crate
-![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)
-![React Router](https://img.shields.io/badge/React_Router-7.12-CA4245?style=for-the-badge&logo=react-router&logoColor=white)
-![Vite](https://img.shields.io/badge/Vite-7.2-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![Framer Motion](https://img.shields.io/badge/Framer_Motion-12.28-0055FF?style=for-the-badge&logo=framer&logoColor=white)
+![React](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/AndreasAch/recipe_crate/main/client/package.json&query=$.dependencies.react&style=plastic&logo=react&label=React&color=61DAFB&logoColor=black)
+![Vite](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/AndreasAch/recipe_crate/main/client/package.json&query=$.devDependencies.vite&style=plastic&logo=vite&label=Vite&color=646CFF&logoColor=white)
+![Framer Motion](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/AndreasAch/recipe_crate/main/client/package.json&query=$.dependencies['framer-motion']&style=plastic&logo=framer&label=Framer%20Motion&color=0055FF&logoColor=white)
+![React Router](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/AndreasAch/recipe_crate/main/client/package.json&query=$.dependencies['react-router-dom']&style=plastic&logo=react-router&label=React%20Router&color=CA4245&logoColor=white)
 
-![Express.js](https://img.shields.io/badge/Express.js-5.2-404D59?style=for-the-badge&logo=express&logoColor=white)
-![Node.js](https://img.shields.io/badge/Node.js-24+-339933?style=for-the-badge&logo=node.js&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/pg_(Driver)-8.17-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-
-![TypeScript](https://img.shields.io/badge/TypeScript-5.9-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
+![Express](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/AndreasAch/recipe_crate/main/server/package.json&query=$.dependencies.express&style=plastic&logo=express&label=Express&color=404D59&logoColor=white)
+![PostgreSQL Driver](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/AndreasAch/recipe_crate/main/server/package.json&query=$.dependencies.pg&style=plastic&logo=postgresql&label=pg%20(Driver)&color=316192&logoColor=white)
+![TypeScript](https://img.shields.io/badge/dynamic/json?url=https://raw.githubusercontent.com/AndreasAch/recipe_crate/main/server/package.json&query=$.devDependencies.typescript&style=plastic&logo=typescript&label=TypeScript&color=3178C6&logoColor=white)
 
 A modern, full-stack application for managing recipes, planning meals, and handling ingredient lists. Built with the **PERN stack** (PostgreSQL, Express, React, Node), this project features a robust REST API and a responsive frontend powered by **Vite**.
 
