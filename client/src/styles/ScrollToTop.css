@@ -1,0 +1,23 @@
+.scroll-to-top {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 60px;
+  height: 60px;
+  background: rgba(12, 245, 0, 0.115);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);  
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--primary);
+  cursor: pointer;
+  box-shadow: 0 8px 25px 0 rgba(123, 123, 123, 0.49);
+  z-index: 2000;
+  transition: background 0.3s ease;
+}
+
+.scroll-to-top:hover {
+  background: rgba(198, 198, 198, 0.3);
+}

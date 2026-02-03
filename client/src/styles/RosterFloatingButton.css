@@ -1,0 +1,195 @@
+.roster-fab-container {
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    z-index: 1000;
+}
+
+.roster-fab {
+    bottom: 2rem;
+    left: 2rem;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(12, 245, 0, 0.115);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: none;
+    box-shadow: 0 8px 25px 0 rgba(123, 123, 123, 0.49);
+    color: var(--primary);
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    padding: 0;
+    transition: all 0.2s ease;
+}
+.roster-fab:hover {
+  background: rgba(198, 198, 198, 0.3);
+  transform: scale(1.1);
+}
+
+.roster-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background: #2b8450;
+    color: white;
+    font-size: 0.75rem;
+    font-weight: 700;
+    min-width: 22px;
+    height: 22px;
+    border-radius: 11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0px;
+}
+
+.roster-overlay-blur {
+    position: fixed;
+    inset: 0;
+    background: rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(8px);
+    z-index: 1100;
+}
+
+.roster-popup {
+    position: fixed;
+    top: 10%;
+    bottom: 100px;
+    left: 30px;
+    width: 320px;
+    min-height: 140px;
+    max-height: 70vh;
+    background: white;
+    border-radius: 24px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+    z-index: 1200;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.roster-popup-header {
+    flex-shrink: 0;
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #f1f2f6;
+}
+
+.roster-popup-list {
+    flex-grow: 1;
+    overflow-y: auto; 
+    overflow-x: hidden;
+    padding: 12px;
+    
+    scrollbar-width: thin;
+    scrollbar-color: #dfe6e9 transparent;
+}
+
+.roster-popup-list::-webkit-scrollbar {
+    width: 6px;
+}
+
+.roster-popup-list::-webkit-scrollbar-thumb {
+    background-color: #dfe6e9;
+    border-radius: 10px;
+}
+
+.roster-item-row {
+    display: flex;
+    align-items: center;
+    gap: 0px;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background 0.2s;
+    background: #e6fcef;
+    margin-bottom: 5px;
+    box-shadow: 0px 1px 2px 1px rgba(0, 0, 0, 0.144);
+}
+
+.roster-item-row:hover {
+    background: #9ddab6;
+}
+
+.roster-item-thumb {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 0;
+    object-fit: cover;
+    z-index: 200;
+    background: linear-gradient(45deg, #bac7bb 0%, #939f94 100%);
+}
+.roster-item-thumb.default{
+    padding: 3px;
+    object-fit: contain;
+}
+
+.roster-item-name-pill {
+    flex: 1;
+    background: rgb(255, 255, 255);
+    padding: 5px 6px 5px 20px;
+    border-radius: 0% 50px 50px 0%;
+    margin-left: -15px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2d3436;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    box-shadow: inset 0px 0px 5px -1px #00000060;
+}
+
+.roster-item-delete {
+    background: none;
+    border: none;
+    color: var(--error);
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+}
+
+.roster-popup-footer {
+    flex-shrink: 0;
+    padding: 0 12px 16px 12px;
+    background: white;
+}
+
+.footer-divider {
+    border: 0;
+    height: 1px;
+    background: #f1f2f6;
+    margin-bottom: 12px;
+}
+
+.generate-grocery-btn {
+    width: 100%;
+    padding: 12px;
+    border: none;
+    border-radius: 14px;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(9, 132, 227, 0.2);
+}
+
+.generate-grocery-btn:hover {
+    background: var(--primary-hover);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 15px rgba(9, 132, 227, 0.3);
+}
+
+.generate-grocery-btn:active {
+    transform: translateY(0);
+}

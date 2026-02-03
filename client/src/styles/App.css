@@ -1,0 +1,213 @@
+:root {
+	/* Colors */
+	--primary: #2ecc71;
+	--primary-hover: #27ae60;
+	--dark: #282828;
+	--light: #f4f7f6;
+	--text-main: #353535;
+	--text-muted: #636e72;
+	--border: #dfe4ea;
+	--error: #fc737e;
+
+	/* Shadows */
+	--shadow-sm: 0 4px 12px rgba(0, 0, 0, 0.05);
+	--shadow-md: 0 10px 30px rgba(0, 0, 0, 0.08);
+	--shadow-lg: 0 15px 45px rgba(0, 0, 0, 0.15);
+
+	/* Radi */
+	--radius-sm: 8px;
+	--radius-md: 16px;
+	--radius-lg: 24px;
+	--radius-xl: 32px;
+	--radius-pill: 50px;
+
+	/* Layout */
+	--nav-height:     
+;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.recipe-detail-page ~ .main-nav {
+	display: none;
+}
+
+#root {
+	width: 100%;
+	max-width: none;
+	overflow: visible;
+	height: auto;
+	min-height: 100vh;
+	margin: 0;
+	padding: 0;
+}
+
+/* Base Styles */
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	-webkit-tap-highlight-color: transparent;
+	outline: none;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	background-color: var(--light);
+	color: var(--text-main);
+	overflow-x: hidden;
+}
+/* Unified Container */
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 20px;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+.app {
+	width: 100%;
+	height: auto;
+	overflow: visible;
+	display: flex;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+button:focus,
+button:active,
+.arc-item:focus,
+.menu-toggle:focus {
+	outline: none !important;
+}
+
+button:focus-visible {
+	outline: 2px solid var(--primary);
+	outline-offset: 2px;
+}
+
+* {
+	-webkit-tap-highlight-color: transparent;
+}
+
+main {
+	flex: 1;
+	width: 100%;
+	display: block;
+	padding-bottom: 50px;
+}
+
+/* Standard Button Styles */
+.btn-primary {
+	background-color: var(--primary);
+	color: white;
+	border: none;
+	padding: 12px 24px;
+	border-radius: var(--radius-pill);
+	font-weight: 700;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.btn-primary:hover {
+	background-color: var(--primary-hover);
+	transform: translateY(-2px);
+}
+
+.btn-negative {
+	background: #ff4757;
+	color: rgb(255, 255, 255);
+	border: none;
+	width: 2em;
+	height: 2em;
+	padding: 0;
+	border-radius: 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	transition: all 0.2s ease;
+}
+
+.btn-negative:hover {
+	background: #fc737e;
+}
+
+/* Text styles*/
+.page-title {
+	font-family: "Poppins", sans-serif;
+	font-size: 2.2rem;
+	font-weight: 800;
+	margin-bottom: 8px;
+	color: var(--text-main);
+}
+
+.section-title {
+	font-family: "Poppins", sans-serif;
+	font-size: 1.5rem;
+	font-weight: 700;
+	margin-bottom: 12px;
+	color: var(--text-main);
+}
+
+/* Standard Input Style */
+input,
+textarea {
+	width: 100%;
+	font-family: "Poppins", sans-serif;
+	padding: 12px;
+	border-radius: var(--radius-md);
+	border: 1px solid var(--border);
+	transition: all 0.2s ease;
+	color: var(--dark);
+	font-size: 1rem;
+}
+
+/* Hide number arrows */
+input[type="number"] {
+	-moz-appearance: textfield;
+	appearance: textfield;
+	margin: 0;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}
+
+.form-input {
+	background-color: #f8f9fa;
+}
+.form-input-white {
+	background: white;
+}
+
+.form-input-white-c {
+	background: white !important;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+}
+
+.form-input-white:focus,
+.form-input:focus,
+.form-input-white-c:focus {
+	outline: none;
+	background-color: #f8f9fa;
+	border-color: var(--primary);
+	box-shadow: 0 0 0 4px rgba(46, 204, 112, 0.223);
+}
+
+.form-input-white:focus,
+.form-input-white-c:focus {
+	outline: none;
+	background-color: white;
+	border-color: var(--primary);
+	box-shadow: 0 0 0 4px rgba(46, 204, 112, 0.223);
+}

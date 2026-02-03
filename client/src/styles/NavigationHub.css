@@ -1,0 +1,93 @@
+ :root{
+    --container-h: 220px;
+    --logo-sz: 128px;
+}
+
+.hub-container {
+    position: relative;
+    width: 100%;
+    height: var(--container-h); 
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    z-index: 1000;
+    overflow: visible;
+}
+
+.hub-divider-bg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+    height: calc(var(--container-h) - (var(--logo-sz) * 0.5));
+    background: linear-gradient(135deg, #27ae60 0%, #2ecc71 100%);
+    z-index: 1;
+}
+
+.hub-main-logo {
+    position: relative;
+    width: 128px;
+    height: 128px;
+    background: #f4f7f6;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1002;
+}
+
+.hub-main-logo.active {
+	transform: rotate(15deg) scale(1.1);
+}
+
+.hub-logo-img {
+	width: 75%;
+	height: 75%;
+	object-fit: contain;
+	-webkit-filter: drop-shadow(5px 5px 5px #22222297);
+	filter: drop-shadow(5px 5px 5px #22222297);
+	transition:
+		background 0.3s ease,
+		box-shadow 0.3s ease;
+}
+
+.hub-menu-overlay {
+    position: absolute;
+    bottom: calc(var(--logo-sz) * 0.5);
+    left: 50%;
+    z-index: 5;
+}
+
+.hub-child-btn {
+    pointer-events: auto;
+	position: absolute;
+	width: 56px;
+    height: 56px;
+    margin-left: -28px;
+    margin-top: -28px;
+	border-radius: 50%;
+	border: none;
+	background: #8deab3;
+	color: #2f3130;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	cursor: pointer;
+	box-shadow: 0 4px 15px rgba(77, 77, 77, 0.462);
+}
+.hub-child-btn:hover {
+    background-color: #78c99a;
+}
+
+.hub-btn-label {
+	position: absolute;
+	bottom: -20px;
+	font-size: 0.65rem;
+	font-weight: 800;
+	text-transform: uppercase;
+	color: #2f3130;
+	letter-spacing: 0.5px;
+}
