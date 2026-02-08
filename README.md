@@ -16,7 +16,7 @@ A modern, full-stack application for managing recipes, planning meals, and handl
 
 
 
-## 🚀 Key Features
+## ✨ Key Features
 
 * **Hybrid Architecture:** Seamlessly switches between a local offline PostgreSQL database and a production cloud database based on environment variables.
 * **"Cook Tonight" Roster:** A dedicated planning feature to toggle recipes into a daily cooking list.
@@ -26,8 +26,9 @@ A modern, full-stack application for managing recipes, planning meals, and handl
 
 ## 🛠️ Tech Stack
 
-**Frontend**
+**Frontend & Framework**
 * **React 18+** (UI Library)
+* **Next.js 16+** (App Router & Server Actions)
 * **TypeScript** (Type Safety)
 * **Vite** (Next-gen Build Tool)
 * **CSS Modules** (Scoped Styling)
